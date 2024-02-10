@@ -1,0 +1,149 @@
+:root{
+    --color-principal: #1E1E1E;
+    --color-secondary: #fff ;
+    --font-family-principal: 'Krona One', sans-serif;
+    --font-secondary-: 'Livvic', sans-serif;
+}
+
+.mainlogin{
+    display: flex;
+    flex-direction: row;
+    background: #fff;
+}
+
+.mainlogin__indication{
+    background-color: var(--color-principal);
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    border-radius: 0em 0em 3em 0em;
+}
+
+.mainlogin__indication > p{
+    font-family: var(--font-secondary-);
+    color: var(--color-secondary);
+    padding: 1em;
+    font-size: 2em;
+    text-align: center;
+}
+
+.mainlogin__register{
+    background-color: var(--color-secondary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    gap: 5em;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.mainlogin__yourphotoperfile{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
+}
+
+.mainlogin__yourphotoperfile > div:first-child img{
+    width: 17vw;}
+
+.mainlogin__urlofphoto input{
+    padding: 0.5em 5em 0.5em 0.5em;
+    border-style: none;
+    background-color: var(--color-principal);
+    font-size: 1.5em;
+    color: var(--color-secondary);
+}
+
+.mainlogin__warningphotoperfile{
+    font-size: 1.5em;
+    color: var(--color-principal);
+    font-family: var(--font-secondary-);
+    text-align: center;
+}
+
+.mainlogin__contentform{
+
+}
+
+.mainlogin__form{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.mainlogin__completeregister{
+    padding: 0.5em 1em;
+    border-style: solid;
+    background-color: var(--color-principal);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+}
+
+.mainlogin__completeregister label img{
+    width: 2vw;
+    background-color: var(--color-secondary);
+    border-radius: 0.5em;
+}
+
+.mainlogin__completeregister input{
+    background-color: #fff0;
+    border-style: none;
+    color: var(--color-secondary);
+    font-size: 2em;
+    font-family: var(--font-secondary-);
+}
+
+.mainlogin__completeregister input:focus{
+    outline: none;
+}
+
+.mainlogin__completeregister input:user-invalid{
+    border-style: solid;
+    border-width: 0em 0em 0.1em 0em;
+    border-color: #ff0000;
+}
+
+.mainlogin__contentbuttonofregister{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+
+    & > p{
+        font-size: 1.2em;
+        font-family: var(--font-secondary-);
+        color: #ff4c4c;
+        font-weight: bold;
+    }
+}
+
+
+
+.mainlogin__butonregister{
+    font-size: 2em;
+    border-radius: 0.5em;
+    padding: 0.5em 1em;
+    color: var(--color-secondary);
+    border-style: none;
+    background-color: #165B82;
+    cursor: pointer;
+
+    transition: box-shadow 0.5s;
+
+    &:hover{
+        box-shadow: 0px 0px 20px #1f7bb0;
+    }
+
+    &.buttondisabled{
+        background-color: #0e3850;
+
+        &:hover{
+            box-shadow: 0px 0px 0px #1f7bb0;
+        }
+    }
+}
